@@ -1,0 +1,106 @@
+
+<div class="container project-wrapper">
+	<div class="row project-detail">
+		<div class="col-md-6 image">
+			<div class="carousel-widget" data-singleitem="true" data-pager="true">
+				<div class="carousel">
+					<div class="owl-carousel owl-theme">
+
+						<div class="item">	
+							<img src="images/project-detail-1.jpg" alt="project detail">
+						</div>
+						<div class="item">	
+							<img src="images/project-detail-2.jpg" alt="project detail">
+						</div>
+						<div class="item">	
+							<img src="images/project-detail-3.jpg" alt="project detail">
+						</div>
+			
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="text col-md-6">
+			<div class="title">
+				<h2>Portfolio</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit
+					eiusmod tempor incididunt ut labore et dolore magna aliqua
+				</p>
+			</div>	
+			<p>
+				Duis quis ligula eros. Aliquam erat volutpat. Mauris rutrum, justo eu varius mollis, lectus dolor vestibulum mi, ac fermentum urna nulla at augue. Vestibulum volutpat turpis eget urna consequat fringilla. Curabitur at libero neque. Integer vestibulum porta mi sit amet fermentum. Aliquam id ligula est. Duis ac laoreet massa. Ut euismod molestie felis quis venenatis. Proin massa turpis, imperdiet eu lectus quis, consequat efficitur magna. Nulla facilisi. In a mollis massa, et feugiat est. Aliquam dapibus dapibus interdum.
+			</p>
+
+		</div>
+
+		<!-- ( SOCIAL ICON ) -->
+		<div class="social-icon">
+			<a class="icon facebook vm" href="#"><i class="fa fa-facebook vm-item"></i></a>
+			<a class="icon twitter vm" href="#"><i class="fa fa-twitter vm-item"></i></a>
+			<a class="icon tumblr vm" href="#"><i class="fa fa-tumblr vm-item"></i></a>
+			<a class="icon behance vm" href="#"><i class="fa fa-behance vm-item"></i></a>
+		</div>
+		
+	</div>
+</div>
+
+
+<script>
+
+	// OWL CAROUSEL
+	function strtoArr(arr) {
+		if (typeof(arr) == "string") {
+			var t1 = arr.split('|');
+			var t2 = [];
+			$.each(t1, function(index, val) {
+				var str = val;
+				t2.push(str.split(','));
+			});
+			return t2;
+		}else{
+			return false;
+		}
+	}
+
+	function dataCheck(val){
+		return val && val == "true" ? true : false;
+	}
+
+	if ($(".carousel-widget").length > 0) {
+		var carousel = 0;
+		$('.carousel-widget').each(function(){
+
+			// SET ID ON ALL OBJECTS
+			carousel++;
+			var createObj = 'owl'+carousel;
+			$(this).css({opacity:0});
+			$(this).attr("id", createObj);
+			$(this).addClass(createObj);
+
+			var pager = dataCheck($(this).attr('data-pager'));
+			var itemsCustom = $(this).attr('data-itemrange') ? strtoArr($(this).attr('data-itemrange')) : [ [0, 1], [420, 2], [600, 3], [768, 3], [980, 4] ];
+			var singleItem = dataCheck($(this).attr('data-singleitem'));
+			var effect = dataCheck($(this).attr('data-effect'));
+
+			// console.log(itemsCustom);
+
+			$("."+createObj).animate({opacity:1}, 100, function(){
+
+				 $("."+createObj+ " .carousel .owl-carousel").owlCarousel({
+					itemsCustom : itemsCustom,
+					navigation : false,
+					pagination : pager,
+					responsiveBaseWidth: "."+createObj,
+					singleItem: singleItem,
+					scrollPerPage: 1,
+					transitionStyle : effect
+				});
+
+				var owl = $("."+createObj+ " .carousel .owl-carousel").data('owlCarousel');
+				$("."+createObj).find('.carousel-btn .prev').on('click', function() { owl.prev(); });
+				$("."+createObj).find('.carousel-btn .next').on('click', function() { owl.next(); });
+			});
+		});
+	}
+</script>
