@@ -1,0 +1,592 @@
+/*
+***************************************************
+AUTHOR : NCodeArt
+PROJECT : Elekto - One Page Template
+VERSION : 0.04
+***************************************************
+*/
+
+/*---------------------------------------------------
+			MEDIA QUARIES
+-----------------------------------------------------
+>> MEDIA QUARIES
+	- DESKTOP LAYOUT
+		- @media only screen and (min-width: 1200px)
+		- @media only screen and (min-width: 980px)
+		- @media only screen and (min-width: 980px) and (max-width: 1199px)
+	- TABLET LAYOUT
+		- @media only screen and (min-width: 768px) and (max-width: 979px)
+	- MOBILE LAYOUT 
+		- @media only screen and (min-width: 200px) and (max-width: 767px)
+		- @media only screen and (min-width: 200px) and (max-width: 419px)
+		- @media only screen and (min-width: 420px) and (max-width: 599px)
+		- @media only screen and (min-width: 600px) and (max-width: 767px)
+----------------------------------------------------*/
+
+
+
+/*===========================================*/
+/*	DESKTOP LAYOUT 
+/*===========================================*/
+@media only screen and (min-width: 1200px) {
+
+}
+@media only screen and (min-width: 980px) {
+	
+}
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
+	
+	/*	COMMON STYLE
+	----------------------------*/
+	.container{ width: 930px; }
+	body.box-layout .outter-box, body.box-layout .header{ width: 950px; }
+
+	/*	CAROUSEL COMMON STYLE
+	----------------------------*/
+	.carousel-btn{
+		position: inherit;
+		top: 0px;
+		left: 0px;
+		margin-top: 15px;
+		height: auto;
+	}
+	.carousel-btn .prev, .carousel-btn .next{ margin: 0 10px; } 
+	.carousel-btn .prev{ float: inherit; }
+	.carousel-btn .next{ float: inherit; }
+
+	/*	OUR-BLOG PAGE
+	----------------------------*/
+	.blog-box .text{ top: 71%; }
+
+}
+
+/*===========================================*/
+/*	TABLET LAYOUT 
+/*===========================================*/
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+
+	/*	COMMON STYLE
+	----------------------------*/
+	.container{ width: 718px; }
+
+	/*	CAROUSEL COMMON STYLE
+	----------------------------*/
+	.carousel-btn{
+		position: inherit;
+		top: 0px;
+		left: 0px;
+		margin-top: 15px;
+		height: auto;
+	}
+	.carousel-btn .prev, .carousel-btn .next{ margin: 0 10px; } 
+	.carousel-btn .prev{ float: inherit; }
+	.carousel-btn .next{ float: inherit; }
+
+	/*	TYPOGRAPHI
+	----------------------------*/
+	h1{ font-size: 34px; }
+	h2{ font-size: 28px; }
+	h3{ font-size: 22px; }
+	h4{ font-size: 16px; }
+	h5{ font-size: 13px; }
+	h6{ font-size: 11px; }
+	.title p, .lg-text{ font-size: 24px; }
+
+	/*	NAVIGATION
+	----------------------------*/
+	.overlay ul{ width: 80%; }
+	.overlay ul li{ padding: 15px 0; }
+	.overlay ul li a{ font-size: 26px; }
+
+	/*	HOME PAGE
+	----------------------------*/
+	#slider.full-width-slider li.slide-bg{ min-height: 700px; }
+
+	/* ( CAPSTIONS ) */
+	.capstion-wrapper .caps-1{ font-size: 18px; }
+	.capstion-wrapper .caps-2 h1{ font-size: 42px; }
+
+	/*	FUN-FACTS PAGE
+	----------------------------*/
+
+	/* ( INFO-BOX 1 ) */
+	.info-box-1{ padding: 20px 0; }
+	.info-box-1 .text .number{ font-size: 35px; }
+	.info-box-1 .text .name{ font-size: 14px; }
+
+	/* ( BLOCKQUOTE ) */
+	.quote p{ width: 70%; font-size: 24px; }
+
+	/*	PORTFOLIO PAGE
+	----------------------------*/
+	#portfolio-1 .port-nav-wrp{ min-height: 0 !important; }
+	#portfolio-1 .port-nav-wrp.vhm > div.vhm-item{
+		position: inherit;
+		top: 0;
+		left: 0;
+		transform: none;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+	}
+
+	/*	PRICING PAGE
+	----------------------------*/
+
+	/* ( PRICE BOX ) */
+	.price-box{ padding: 0 25px 40px 25px; }
+	.price-box .type{ 
+		font-size: 16px;
+		margin-bottom: 28px; 
+	}
+	.price-box .price{ font-size: 50px; }
+	.price-box .amount .saperator{ margin: 20px auto; }
+	.price-box .detail ul li{ 
+		font-size: 14px;
+		padding: 8px 0;
+	}
+	.price-box .btn{ margin-top: 10px; font-size: 12px; }
+
+	/*	CLIENT PAGE
+	----------------------------*/
+	.saying-title h2{ margin-bottom: 23px; }
+
+	/*	CONTACT US PAGE
+	----------------------------*/
+	.contact-form .input-area{ margin-bottom: 15px; }
+	.contact-form textarea.form-control{ min-height: 110px; }
+	.contact-box .icon{ width: 40px; }
+	.contact-box .text{ margin-left: 40px; }
+
+	/*	BLOG-SINGLE PAGE
+	----------------------------*/
+	#sidebar{ display: none; }
+	#main-area{ width: 100%; }
+
+	/*	PROJECT-DETAIL PAGE
+	----------------------------*/
+	.project-detail .image{ padding: 62px 62px 0px 62px; }
+}
+
+/*===========================================*/
+/*	MOBILE LAYOUT 
+/*===========================================*/
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+
+	#logo a{ width: 100px; }
+
+	/*	CAROUSEL COMMON STYLE
+	----------------------------*/
+	body.box-layout .outter-box{ width: 100%; }
+	.carousel-btn{
+		position: inherit;
+		top: 0px;
+		left: 0px;
+		margin-top: 15px;
+		height: auto;
+	}
+	.carousel-btn .prev, .carousel-btn .next{ margin: 0 10px; } 
+	.carousel-btn .prev{ float: inherit; }
+	.carousel-btn .next{ float: inherit; }
+
+	/*	NAVIGATION
+	----------------------------*/
+	.overlay ul{ width: 90%; }
+
+	/*	ABOUT-US PAGE
+	----------------------------*/
+	#about-us .style.gt60{ margin-left: -15px; margin-right: -15px; }
+	#about-us .style.gt60 > [class*="col"]{ padding-left: 15px; padding-right: 15px; }
+	#about-us .lg-text-wrp{ text-align: left; border-right: none; }
+	.about-box-wrp{ padding-left: 0; }
+
+	/*	FUN-FACTS PAGE
+	----------------------------*/
+	.funbox-wrapper > div{ border-right: none; }
+	.info-box-1{ 
+		border-left: 1px solid rgba(255,255,255,0.1); 
+		border-right: 1px solid rgba(255,255,255,0.1) !important;
+		margin: 0 auto; 
+	}
+
+	/*	SERVICES PAGE
+	----------------------------*/
+	.row.service-box-wrp.bd-b{ border-bottom: none; }
+	.service-box-3{ border-right: none; }
+
+	/*	PORTFOLIO PAGE
+	----------------------------*/
+	#portfolio-1 .port-nav-wrp{ min-height: 0 !important; }
+	#portfolio-1 .port-nav-wrp.vhm > div.vhm-item{
+		position: inherit;
+		top: 0;
+		left: 0;
+		transform: none;
+		-webkit-transform: none;
+		-moz-transform: none;
+		-ms-transform: none;
+	}
+
+	/*	PRICING PAGE
+	----------------------------*/
+
+	/* ( PRICE BOX ) */
+	.price-box.top{ margin-top: 50px; }
+	.price-box{ margin-bottom: 50px; }
+
+	/*	OUR-BLOG
+	----------------------------*/
+	.blog-box .text{ top: 76%; }
+	.blog-box .text h5{ margin-top: 12px; }
+	.blog-box:hover .text{ padding: 0 40px 20px 20px; }
+	.blog-box:hover .text h5{ margin-top: 20px; }
+
+	/*	CONTACT-US PAGE
+	----------------------------*/
+	.form-wrapper{ padding-right: 0; }
+	.contact-box-wrp{ border: none; padding-left: 15px; }
+
+	/*	BLOG-SINGLE PAGE
+	----------------------------*/
+	#sidebar{ display: none; }
+	#main-area{ width: 100%; }
+
+	/*	PROJECT-DETAIL PAGE
+	----------------------------*/
+	.project-detail .image{ padding: 30px 30px 0px 30px; }
+	.project-detail .text{ padding: 30px; }
+	.project-detail .owl-theme .owl-controls{
+		position: inherit;
+		top: 0;
+		right: 0;
+		margin-top: 0 !important;
+	}
+	.project-detail .owl-theme .owl-controls .owl-page{ display: inline-block; }
+
+	/*	FOOTER
+	----------------------------*/
+	#footer div{ text-align: center !important; }
+
+}
+@media only screen and (min-width: 200px) and (max-width: 419px) {
+
+	/*	COMMON STYLE
+	----------------------------*/
+	.container{ width: 280px; }
+
+	/*	TYPOGRAPHI
+	----------------------------*/
+	h1{ font-size: 30px; }
+	h2{ font-size: 24px; }
+	h3{ font-size: 28px; }
+	h4{ font-size: 14px; }
+	h5{ font-size: 12px; }
+	h6{ font-size: 11px; }
+	.title p, .lg-text{ font-size: 20px; }
+
+	/*	NAVIGATION
+	----------------------------*/
+	.overlay .overlay-close{
+		position: relative;
+		left: 50%;
+		top: 20px;
+		margin-left: -15px;
+	}
+	.overlay .overlay-close{ width: 25px; height: 25px; }
+	.overlay nav{
+		transform: inherit;
+		position: relative;
+		top: 10%;
+	}
+	.overlay ul li{ 
+		width: auto;
+		padding: 12px 0;
+		margin: 0 10px; 
+	}
+	.overlay ul li a{ font-size: 20px; }
+	.overlay .overlay-close:hover{ width: 30px;	height: 30px; }
+
+	/*	SOCIAL ICON 
+	---------------------------------*/
+	.nav-social-icon{ display: none; }
+
+	/*	HOME PAGE
+	----------------------------*/
+	#slider.full-width-slider li.slide-bg{ min-height: 550px; }
+
+	/* ( SLIDER NAVIGATION ) */
+	.slide-nav{ width: 30px; }
+	.slide-nav span i{ font-size: 40px; }
+	.slide-nav.prev:hover, .slide-nav.next:hover{ width: 40px;}
+
+	/* ( CAPSTIONS ) */
+	.capstion-wrapper .caps-1{ font-size: 12px; }
+	.capstion-wrapper .caps-2{ margin-bottom: 30px; }
+	.capstion-wrapper .caps-2 h1{ font-size: 24px;  margin-bottom: 30px; }
+	.caps-2 .sub-txt:before{ width: 50px; left: -62px; }
+	.caps-2 .sub-txt:after{ width: 50px; right: -62px; }
+	.capstion-wrapper .caps-3 .btn{ font-size: 12px; }
+
+	/*	ABOUT-US
+	----------------------------*/
+	.vertical-carousel{ margin-bottom: 25px; }
+	#about-us .lg-text + p{ margin-bottom: 30px; }
+
+	/*	FUN-FACTS PAGE
+	----------------------------*/
+	.funbox-wrapper{ margin-bottom: 30px; }
+	.funbox-wrapper > div{ border-right: none; }
+
+	/* ( INFO-BOX 1 ) */
+	.info-box-1{ 
+		padding: 20px 0;
+		width: 70%;
+		margin-bottom: 50px;  
+	}
+	.info-box-1 .text .number{ font-size: 35px; }
+	.info-box-1 .text .name{ font-size: 14px; }
+
+	/* ( BLOCKQUOTE ) */
+	.quote p{ 
+		width: 70%;
+		font-size: 20px; 
+		position: inherit !important;
+		top: 0px !important;
+		left: 0px !important;
+		transform: inherit !important;
+	}
+	.quote .icon > i{ font-size: 40px; }
+	.quote .icon.top{ top: 40px; }
+	.quote .icon.bottom{ bottom: 35px; }
+
+	/*	OUR-TEAM PAGE
+	----------------------------*/
+
+	/* ( MEMBER-BOX ) */
+	.member-box .member .detail h5{ margin-bottom: 0px; }
+	.member-box .member .description{ padding: 30px; }
+	.member-box .member .description .occupation{ margin-bottom: 15px; }
+
+	/*	PRICING PAGE
+	----------------------------*/
+
+	/* ( PRICE BOX ) */
+	.price-box .type{ font-size: 18px; }
+
+	/*	CLIENT PAGE
+	----------------------------*/
+	.saying-title .icon.left{ left: -2%; }
+	.saying-title .icon.right{ right: -2%; }
+	.client{ 
+		display: block; 
+		margin: auto;
+		margin-bottom: 5px;
+	}
+
+	/*	BLOG-LIST PAGE
+	----------------------------*/
+	.blog-list .date{ 
+		width: auto;
+		float: inherit;
+		height: auto;
+		border-right: none; 
+		text-align: left;
+		margin-bottom: 10px;
+	}
+	.blog-list .date span{ display: inline-block; }
+	.blog-list .date .day{ font-size: 24px; }
+	.blog-list .text{ margin-left: 0px; }
+
+	/*	BLOG-SINGLE PAGE
+	----------------------------*/
+	.blog-title h3{ font-size: 20px; }
+	.quote-1 p{ font-size: 18px; }
+	.blog-share{ text-align: center; }
+	.blog-share .tags{ float: inherit; margin-bottom: 10px; }
+	.blog-share .s-icon{ float: inherit; }
+
+	/* ( ABOUT AUTHOR ) */
+	.author .image{ float: inherit; margin-bottom: 20px; }
+	.author .text{
+		margin-left: 0px;
+		padding-left: 0px;
+		border-left: none;
+	}
+
+	/* ( COMMENT )*/
+	.comment .image{ float: inherit; margin-bottom: 20px; }
+	.comment .text{ 
+		margin-left: 0px;  
+		padding-left: 0px;
+		border-left: none;
+	}
+	.comment .text h5{ display: block; border-right: none; }
+	.comment.reply{ margin-left: 40px; }
+
+}
+@media only screen and (min-width: 420px) and (max-width: 599px) {
+	
+	/*	COMMON STYLE
+	----------------------------*/
+	.container{ width: 370px; }
+
+	/*	TYPOGRAPHI
+	----------------------------*/
+	h1{ font-size: 32px; }
+	h2{ font-size: 26px; }
+	h3{ font-size: 20px; }
+	h4{ font-size: 14px; }
+	h5{ font-size: 12px; }
+	h6{ font-size: 11px; }
+	.title p, .lg-text{ font-size: 20px; }
+
+	/*	NAVIGATION
+	----------------------------*/
+	.overlay .overlay-close{
+		position: relative;
+		left: 50%;
+		top: 20px;
+		margin-left: -15px;
+	}
+	.overlay .overlay-close{ width: 25px; height: 25px; }
+	.overlay nav{
+		transform: inherit;
+		position: relative;
+		top: 10%;
+	}
+	.overlay ul li{ 
+		width: auto;
+		padding: 12px 0;
+		margin: 0 10px; 
+	}
+	.overlay ul li a{ font-size: 22px; }
+	.overlay .overlay-close:hover{ width: 30px; height: 30px; }
+
+	/*	SOCIAL ICON 
+	-----------------------------*/
+	.nav-social-icon{ display: none; }
+
+	/*	HOME PAGE
+	----------------------------*/
+	#slider.full-width-slider li.slide-bg{ min-height: 600px; }
+
+	/* ( SLIDER NAVIGATION ) */
+	.slide-nav{ width: 30px; }
+	.slide-nav span i{ font-size: 40px; }
+	.slide-nav.prev:hover, .slide-nav.next:hover{ width: 40px;}
+
+	/* ( CAPSTIONS ) */
+	.capstion-wrapper .caps-1{ font-size: 16px; }
+	.capstion-wrapper .caps-2{ margin-bottom: 30px; }
+	.capstion-wrapper .caps-2 h1{ font-size: 36px; margin-bottom: 30px; }
+
+	/*	ABOUT-US
+	----------------------------*/
+	.vertical-carousel{ margin-bottom: 25px; }
+	#about-us .lg-text + p{ margin-bottom: 30px; }
+
+	/*	FUN-FACTS PAGE
+	----------------------------*/
+
+	/* ( INFO-BOX 1 ) */
+	.info-box-1{ 
+		padding: 20px 0;
+		width: 70%;
+		margin-bottom: 50px;  
+	}
+	.info-box-1 .text .number{ font-size: 35px; }
+	.info-box-1 .text .name{ font-size: 14px; }
+
+	/* ( BLOCKQUOTE ) */
+	.quote p{ width: 70%; font-size: 20px; }
+	.quote .icon > i{ font-size: 40px; }
+	.quote .icon.top{ top: 40px; }
+	.quote .icon.bottom{ bottom: 35px; }
+	.funbox-wrapper > div{ border-right: none; }
+
+	/*	OUR-TEAM PAGE
+	----------------------------*/
+
+	/* ( MEMBER-BOX ) */
+	.member-box{ width: 80%; margin: 0 auto; }
+	.member-box .member .detail h5{ margin-bottom: 0px; }
+
+	/*	CLIENT PAGE
+	----------------------------*/
+	.saying-title .icon.left{ left: -2%; }
+	.saying-title .icon.right{ right: -2%; }
+
+	/*	BLOG-LIST PAGE
+	----------------------------*/
+	.blog-list .date{ width: 60px; height: 80px; }
+	.blog-list .date .day{ font-size: 24px; }
+	.blog-list .text{ margin-left: 80px; }
+
+	/*	BLOG-SINGLE PAGE
+	----------------------------*/
+	.blog-title h3{ font-size: 20px; }
+	.quote-1 p{ font-size: 18px; }
+	.blog-share{ text-align: center; }
+	.blog-share .tags{ float: inherit; margin-bottom: 10px; }
+	.blog-share .s-icon{ float: inherit; }
+}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+
+	/*	COMMON STYLE
+	----------------------------*/
+	.container{ width: 550px; }
+
+	/*	TYPOGRAPHI
+	----------------------------*/
+	h1{ font-size: 34px; }
+	h2{ font-size: 28px; }
+	h3{ font-size: 22px; }
+	h4{ font-size: 16px; }
+	h5{ font-size: 13px; }
+	h6{ font-size: 11px; }
+	.title p, .lg-text{ font-size: 24px; }
+
+	/*	NAVIGATION
+	----------------------------*/
+	.overlay ul li{ width: auto; padding: 15px 0; }
+	.overlay ul li a{ font-size: 24px; }
+	.overlay .overlay-close{ width: 25px; height: 25px; }
+	.overlay .overlay-close:hover{ width: 30px; height: 30px; }
+
+	/*	HOME PAGE
+	----------------------------*/
+	#slider.full-width-slider li.slide-bg{ min-height: 650px; }
+	/* ( SLIDER NAVIGATION ) */
+
+	/* ( CAPSTIONS ) */
+	.capstion-wrapper .caps-1{ font-size: 18px; }
+	.capstion-wrapper .caps-2 h1{ font-size: 40px; }
+
+	/*	ABOUT-US
+	----------------------------*/
+	.vertical-carousel{ margin-bottom: 30px; }
+
+	/*	FUN-FACTS PAGE
+	----------------------------*/
+	.funbox-wrapper > div{ border-right: none; }
+
+	/* ( INFO-BOX 1 ) */
+	.info-box-1{ 
+		padding: 20px 0;
+		width: 50%;
+		margin-bottom: 50px;  
+	}
+	.info-box-1 .text .number{ font-size: 35px; }
+	.info-box-1 .text .name{ font-size: 14px; }
+
+	/* ( BLOCKQUOTE ) */
+	.quote p{ width: 70%; font-size: 24px; }
+	
+	/*	OUR-TEAM PAGE
+	----------------------------*/
+
+	/* ( MEMBER-BOX ) */
+	.member-box{ width: 80%; margin: 0 auto; }
+	.member-box .member .detail h5{ margin-bottom: 0px; }
+
+}
